@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Googgle Time Machine",
+    "description": "Changes google search to 1999 Google.",
+    "version": "0.1.0",
+    "author": "Liam Hornschild-Bear",
+    "action": {
+      "default_icon": "googgle.png",
+      "default_title": "Rotten Potatoes"
+    },
+    "content_scripts": [
+     {
+       "matches": ["<all_urls>"],
+       "js": ["script.js", "jquery.min.js"],
+       "exclude_globs": [ "*options*"]
+     }
+   ]
+   }
